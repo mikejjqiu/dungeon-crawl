@@ -9,16 +9,13 @@ class player extends GameObject {
     super();
     speed = 10;
     roomX = 1;
-    roomY = 6;
+    roomY = 1;
     size = 50;
     myWeapon = new shotgun();
 
-    maxHP = hp = 50;
+    maxHP = hp = 5000000;
     xp = 5;
     damage = 1;
-
-    if (HERO==HERO1) curAct = d1;
-    if (HERO==HERO3) curAct = d3;
   }
 
 
@@ -65,10 +62,10 @@ class player extends GameObject {
       dmg();
     }
     if (imtimer <= 180) {
-      noFill();
       stroke(dpurple);
+      fill(dpurple, 100);
       strokeWeight(3);
-      ellipse(loc.x-1, loc.y, 50, 70);
+      ellipse(loc.x, loc.y, 60, 80);
     }
   }
 

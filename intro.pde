@@ -17,11 +17,13 @@ void selection() {
 
   if (h1.clicked) { 
     HERO = HERO1;
+    myPlayer.curAct = d1;
     mode = game;
   }
 
   if (h3.clicked) {
     HERO = HERO3;
+    myPlayer.curAct = d3;
     mode = game;
   }
 }
